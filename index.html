@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>+Jakarta Sans Typeface - Open-source fonts for Jakarta City of Collaboration</title>
+  <link rel="icon" type="image/png" href="assets/jfavico.png">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet">
+  <script src="assets/script.js" type="text/javascript"></script>
+
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-jingga fixed-top" id="mainNav">
+    <div class="container-fluid px-3 px-lg-5">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/j-logo.svg" height="90px;" style="padding-top: 10px; padding-bottom: 20px;"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About Fonts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#tester">Type Tester</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger d-none d-md-block" href="#character-map">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-jingga section text-white d-flex align-items-end py-5">
+    <div class="container-fluid text-left p-5">
+		<h1 class="title">+Jakarta Sans</h1>
+		          <p class="subtitle">Open-source Fonts for Jakarta City of Collaboration</p>
+
+    </div>
+  </header>
+
+  <section id="about" class="bg-blue text-white">
+    <div class="section-content d-flex align-items-end p-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>About Fonts</h2>
+        </div>
+        <div class="col-lg-8">  
+          <p class="lead">The +Jakarta Sans is a versatile modern type family designed for +Jakarta City Branding in 2020, where each glyph has its own varieties with its own different characteristics. Like the city itself, the beauty is in the details. The charms of +Jakarta Sans appear when one looks closer, manifesting in a beauty that emerges once seen as a whole. Each alternate on Display family contains several alternates characters, while the text version has a small adjustment to preserve the legibility of small sizes.</p>
+        </div>
+      </div>
+    </div>     
+  </section>
+
+  <section id="tester" class="bg-white section-content bg-green">
+    <div class="section-content bg-blue px-5 py-5">
+	   <div class="row"> 
+        <div class="col-lg-3 py-3">  
+        <select size="1" id="fontFamilySelector" class="custom-select" name="fontFamilySelector" onchange="changeFont()">
+		<option value="PlusJakartaDisplay-Light.woff">Plus Jakarta Display Light</option>
+		<option value="PlusJakartaDisplay-LightItalic.woff">Plus Jakarta Display Light Italic</option>
+		<option value="PlusJakartaDisplay-Regular.woff">Plus Jakarta Display Regular</option>
+		<option value="PlusJakartaDisplay-Italic.woff">Plus Jakarta Display Italic</option>
+		<option value="PlusJakartaDisplay-Medium.woff" selected="Medium">Plus Jakarta Display Medium</option>
+		<option value="PlusJakartaDisplay-MediumItalic.woff">Plus Jakarta Display Medium Italic</option>
+		<option value="PlusJakartaDisplay-Bold.woff">Plus Jakarta Display Bold</option>
+		<option value="PlusJakartaDisplay-BoldItalic.woff">Plus Jakarta Display Bold Italic</option>
+		
+		<option value="Select Display or Text" disabled>Select Display or Text</option>
+		
+		<option value="PlusJakartaText-Light.woff">Plus Jakarta Text Light</option>
+		<option value="PlusJakartaText-LightItalic.woff">Plus Jakarta Text Light Italic</option>
+		<option value="PlusJakartaText-Regular.woff">Plus Jakarta Text Regular</option>
+		<option value="PlusJakartaText-Italic.woff">Plus Jakarta Text Italic</option>
+		<option value="PlusJakartaText-Bold.woff">Plus Jakarta Text Bold</option>
+		<option value="PlusJakartaText-BoldItalic.woff">Plus Jakarta Text Bold Italic</option>
+		</select>
+        </div>
+        <div class="col-lg-3 py-3">  
+          	<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="120" value="80" class="slider" id="fontsize" oninput="updateSlider();"></div>
+
+        </div>
+        <div class="col-lg-3 py-3">  
+          <div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="150" class="slider" id="lineheight" oninput="updateSlider();"></div> 
+
+        </div>
+        <div class="col-lg-3 py-3">  
+          <div class='labeldiv'><label class='sliderlabel' id='label_spacing' name='Letter Spacing'>Letter Spacing</label><input type='range' min="-10" max="20" step=".1" value='0' class='slider' id='spacing' oninput='updateSlider();'></div>
+
+        </div>
+	   </div>
+	   
+        
+       <div class="col-lg-12 py-5">
+	   <div id="typetester" contenteditable="true" spellcheck="false">
+	   Hijau Betawi / Jingga Bis Kota<br>
+	   Kuning Gigi Balang / Biru Abang<br>
+	   Pink None & City Collaboration.<br>
+	   </div>		
+	   
+	   <div class="row">
+       <div class="col-lg-4">   
+       <input type="checkbox" name="ss01" id="ss01" value="ss01" class="otFeature" onchange="updateFeatures()" checked><label for="ss01" class="otFeatureLabel">Lancip Alternates: SS01</label>
+        </div>
+       
+        <div class="col-lg-4">   
+<input type="checkbox" name="ss02" id="ss02" value="ss02" class="otFeature" onchange="updateFeatures()" checked><label for="ss02" class="otFeatureLabel">Lurus Alternates: SS02</label>
+        </div>
+
+        <div class="col-lg-4">   
+<input type="checkbox" name="ss03" id="ss03" value="ss03" class="otFeature" onchange="updateFeatures()" checked><label for="ss03" class="otFeatureLabel">Lingkar Alternates: SS03</label>
+        </div>
+       
+    </div>
+
+	   
+	   </div>     
+       
+           
+        
+        
+      </div>
+  </section>
+  
+   <section id="character-map" class="bg-white text-black">
+    <div class="section-content p-5 d-none d-md-block">
+      <div class="row">
+
+	  <h2>Characters Map</h2>
+ 	<div class="glyph-grid">
+  <ul class="glyph-grid-list">
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0041;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C1;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C2;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C4;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C0;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C5;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C3;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C6;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0042;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0043;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C7;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0044;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D0;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0045;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C9;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CA;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CB;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00C8;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0046;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0047;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0048;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0049;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CD;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CE;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CF;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00CC;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004A;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004B;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004C;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0141;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004D;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004E;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D1;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x004F;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D3;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D4;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D6;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D2;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D8;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D5;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0152;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0050;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DE;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0051;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0052;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0053;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0160;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0054;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0055;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DA;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DB;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DC;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D9;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0056;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0057;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0058;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0059;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DD;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0178;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005A;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x017D;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0061;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E1;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E2;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E4;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E0;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E5;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E3;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E6;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0062;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0063;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E7;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0064;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F0;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0065;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E9;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00EA;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00EB;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00E8;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0066;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0067;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0068;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0069;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0131;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00ED;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00EE;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00EF;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00EC;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006A;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006B;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006C;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0142;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006D;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006E;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F1;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x006F;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F3;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F4;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F6;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F2;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F8;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F5;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0153;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0070;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FE;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0071;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0072;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0073;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0161;</span></li>
+	<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00DF;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0074;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0075;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FA;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FB;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FC;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F9;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0076;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0077;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0078;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0079;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FD;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00FF;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x007A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x017E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#xFB01;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#xFB02;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00AA;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BA;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0394;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x03A9;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x03C0;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0030;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0031;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0032;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0033;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0034;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0035;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0036;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0037;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0038;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0039;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2080;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2081;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2082;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2083;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2084;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2085;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2086;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2087;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2088;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2089;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2070;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B9;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B2;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B3;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2074;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2075;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2076;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2077;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2078;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2079;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2044;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BD;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BC;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BE;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x215B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x215C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x215D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x215E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2026;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0021;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A1;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003F;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BF;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B7;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2022;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0023;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002F;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0028;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0029;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x007B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x007D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00AD;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2013;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2014;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005F;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x201A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x201E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x201C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x201D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2018;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2019;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00AB;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00BB;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2039;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x203A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0022;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0027;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0020;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A0;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A2;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A4;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0024;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x20AC;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0192;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x20A4;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A3;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A5;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2219;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2215;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x002B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2212;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00D7;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00F7;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003D;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2260;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x003C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2265;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2264;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B1;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2248;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x007E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00AC;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x005E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x221E;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x222B;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x220F;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2211;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x221A;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B5;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2202;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0025;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2030;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x25CA;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#xF8FF;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0040;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x0026;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B6;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A7;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A9;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00AE;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2122;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00B0;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x007C;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x00A6;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2020;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2113;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x2021;</span></li>
+<li class="glyph-grid-item"><span class="glyph-grid-caption">&#x212E;</span></li>
+
+  </ul>
+</div>
+	
+ 		
+ 		
+ 		
+        </div>
+      </div>
+  </section>
+  
+  
+
+  <section id="download" class="bg-white text-black">
+    <div class="section-content p-5">
+      <div class="row">
+        <div class="col-lg-4">
+          <h2>Download Fonts</h2>
+        </div>
+        <div class="col-lg-8">  
+		<h4>Credits:</h4>
+		<p>+Jakarta City of Collaboration branding designed by <a href="https://www.instagram.com/6616__" target="_blank" rel="nofollow">6616 Creative House.</a><br>
+			Custom Typeface designed & developed by <a href="https://www.tokotypefaces.com" target="_blank" rel="nofollow">Tokotype Studio</a>		
+		<hr>
+		<h4>License:</h4>
+		<p>This Font Software is licensed under the SIL Open Font License, Version 1.1.
+		<br>	
+		This license is copied below, and is also available with a FAQ at:
+		<a href="http://scripts.sil.org/OFL">http://scripts.sil.org/OFL</a>
+		<br>
+		<h4>Contribution:</h4>
+		<p>If you want to contribute to develop improvements of this font family,<br>
+			you can fork this project or if you find bugs, please create an <a href="https://github.com/tokotype/PlusJakartaSans/issues" target="_blank">issue</a> or email us at <a href="mailto:abc@tokotypefaces.com">abc@tokotypefaces.com</a></p>
+		Please use responsibly, tag us at <a href="https://www.instagram.com/6616__" target="_blank" rel="nofollow">@6616__</a> & <a href="https://www.instagram.com/tokotype" target="_blank" rel="nofollow">@tokotype</a> if you use this font family for your design.
+		<br>
+		<hr>		
+		<h4>Current version:</h4>
+		21 February 2020:<br>
+		Plus Jakarta Sans v1.000.</br>
+		<br>
+		- Open sourced.</br>
+		- Fine tuning to almost all glyphs.</br>
+		- First public released.</br>
+		<br>		
+		<br>
+		<a href="https://github.com/tokotype/PlusJakartaSans/releases" target="_blank" rel="nofollow"><button type="button" class="btn btn-primary btn-download">Download +Jakarta Sans Fonts</button></a>
+
+		
+        </div>
+      </div>
+    </div>     
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-blue">
+    <div class="container-fluid px-5">
+	    <div class="row">
+		<div class="col-lg-6 col-sm-12">    
+      <p class="text-left text-white">Copyright &copy; Tokotype Studio 2020. All rights reserved.</p>
+		</div>
+		<div class="col-lg-6 col-sm-12">    
+      <span class="text-left text-white float-lg-right">
+	    <img src="assets/tokologo.png" height="40px;" style="padding-right: 20px;"><img src="assets/6616logo.png" height="50px;">  
+      </pan>
+		</div>
+	    </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+
+<style>
+		@font-face { font-family: 'Plus Jakarta Display Light'; src: url('fonts/PlusJakartaDisplay-Light.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Regular'; src: url('fonts/PlusJakartaDisplay-Regular.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Medium'; src: url('fonts/PlusJakartaDisplay-Medium.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Bold'; src: url('fonts/PlusJakartaDisplay-Bold.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Light Italic'; src: url('fonts/PlusJakartaDisplay-LightItalic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Italic'; src: url('fonts/PlusJakartaDisplay-Italic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Medium Italic'; src: url('fonts/PlusJakartaDisplay-MediumItalic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Bold Italic'; src: url('fonts/PlusJakartaDisplay-BoldItalic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Display Light'; src: url('fonts/PlusJakartaDisplay-Light.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Regular'; src: url('fonts/PlusJakartaDisplay-Regular.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Medium'; src: url('fonts/PlusJakartaDisplay-Medium.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Bold'; src: url('fonts/PlusJakartaDisplay-Bold.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Light Italic'; src: url('fonts/PlusJakartaDisplay-LightItalic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Italic'; src: url('fonts/PlusJakartaDisplay-Italic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Medium Italic'; src: url('fonts/PlusJakartaDisplay-MediumItalic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Display Bold Italic'; src: url('fonts/PlusJakartaDisplay-BoldItalic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Light'; src: url('fonts/PlusJakartaText-Light.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Regular'; src: url('fonts/PlusJakartaText-Regular.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Bold'; src: url('fonts/PlusJakartaText-Bold.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Light Italic'; src: url('fonts/PlusJakartav-LightItalic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Italic'; src: url('fonts/PlusJakartav-Italic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Bold Italic'; src: url('fonts/PlusJakartaText-BoldItalic.woff'); }
+		@font-face { font-family: 'Plus Jakarta Text Light'; src: url('fonts/PlusJakartaText-Light.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Regular'; src: url('fonts/PlusJakartaText-Regular.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Bold'; src: url('fonts/PlusJakartaText-Bold.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Light Italic'; src: url('fonts/PlusJakartaText-LightItalic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Italic'; src: url('fonts/PlusJakartaText-Italic.woff2'); }
+		@font-face { font-family: 'Plus Jakarta Text Bold Italic'; src: url('fonts/PlusJakartaText-BoldItalic.woff2'); }
+
+</style>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
