@@ -24,7 +24,8 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-jingga fixed-top" id="mainNav">
+  <header id="navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-green" id="mainNav">
     <div class="container-fluid px-3 px-lg-5">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets/j-logo.svg" height="90px;" style="padding-top: 10px; padding-bottom: 20px;"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,16 +49,17 @@
       </div>
     </div>
   </nav>
+  </header>
 
-  <header class="bg-jingga section text-white d-flex align-items-end py-5">
+  <div class="bg-green section text-white d-flex align-items-end py-5">
     <div class="container-fluid text-left p-5">
 		<h1 class="title">+Jakarta Sans</h1>
 		          <p class="subtitle">Open-source Fonts for Jakarta City of Collaboration</p>
 
     </div>
-  </header>
+  </div>
 
-  <section id="about" class="bg-blue text-white">
+  <section id="about" class="bg-white text-black">
     <div class="section-content d-flex align-items-end p-5">
       <div class="row">
         <div class="col-lg-4">
@@ -71,7 +73,7 @@
   </section>
 
   <section id="tester" class="bg-white section-content bg-green">
-    <div class="section-content bg-blue px-5 py-5">
+    <div class="section-content bg-blue px-3 px-lg-5 py-5">
 	   <div class="row"> 
         <div class="col-lg-3 py-3">  
         <select size="1" id="fontFamilySelector" class="custom-select" name="fontFamilySelector" onchange="changeFont()">
@@ -98,18 +100,18 @@
           	<div class="labeldiv"><label class="sliderlabel" id="label_fontsize" name="Font Size">Font Size</label><input type="range" min="10" max="120" value="80" class="slider" id="fontsize" oninput="updateSlider();"></div>
 
         </div>
-        <div class="col-lg-3 py-3">  
+        <div class="col-lg-3 py-3 d-none d-sm-block">  
           <div class="labeldiv"><label class="sliderlabel" id="label_lineheight" name="Line Height">Line Height</label><input type="range" min="30" max="300" value="150" class="slider" id="lineheight" oninput="updateSlider();"></div> 
 
         </div>
-        <div class="col-lg-3 py-3">  
+        <div class="col-lg-3 py-3 d-none d-sm-block">  
           <div class='labeldiv'><label class='sliderlabel' id='label_spacing' name='Letter Spacing'>Letter Spacing</label><input type='range' min="-10" max="20" step=".1" value='0' class='slider' id='spacing' oninput='updateSlider();'></div>
 
         </div>
 	   </div>
 	   
         
-       <div class="col-lg-12 py-5">
+       <div class="py-5">
 	   <div id="typetester" contenteditable="true" spellcheck="false">
 	   Hijau Betawi / Jingga Bis Kota<br>
 	   Kuning Gigi Balang / Biru Abang<br>
