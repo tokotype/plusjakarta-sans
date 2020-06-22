@@ -64,6 +64,7 @@ label.textContent += "em";
 }
 }
 
+/*
 function navBar(){
   jQuery('body').scrollspy({target: ".navbar", offset: 0});   
 };
@@ -78,4 +79,5 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
+*/
 

@@ -7,6 +7,13 @@
   z-index: 99;
 }
 
+@media (max-width: 768px) {
+html, body {
+width: auto !important;
+overflow-x: hidden !important;
+}
+}
+
 body {
     margin: 0;
 	font-family: "Plus Jakarta Text Regular", sans-serif;
